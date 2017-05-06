@@ -30,10 +30,6 @@ public class FreeFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_free, container, false);
 
         AdView mAdView = (AdView) root.findViewById(R.id.adView);
-        if (mAdView == null) {
-            // Paid version of app, no need to add ads
-            return root;
-        }
         // Create an ad request. Check logcat output for the hashed device ID to
         // get test ads on a physical device. e.g.
         // "Use AdRequest.Builder.addTestDevice("ABCDEF012345") to get test ads on this device."
