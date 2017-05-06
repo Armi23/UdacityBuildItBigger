@@ -31,4 +31,5 @@ dependencies {
     compile 'com.google.code.findbugs:jsr305:2.0.1'
     compile 'com.jakewharton.timber:timber:4.5.1'
     compile project(path: ':jokebackend', configuration: 'android-endpoints')
+    testCompile 'junit:junit:4.12'
 }
